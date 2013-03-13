@@ -1,0 +1,41 @@
+===========================================
+ SL: キータイプ矯正ソフト
+	Copyright 1993,1998 Toyoda Masashi
+		(toyoda@is.titech.ac.jp)
+===========================================
+
+むかしにも投稿された冗談ソフトの sl の豪華版です。
+アイデアは借り物ですが、プログラム自体は私のオリジナルです。
+a,l,F オプションが有効です。機能は実行して確かめてください。
+make すればできあがります。
+
+
+
+I have no idea what characterset that was trying to use, and I 
+have no idea what it says. So here is a new one.
+
+===========================================
+ SL: Steam Locomotive Prank
+	Copyright 1993,1998 Toyoda Masashi
+		(toyoda@is.titech.ac.jp)
+  Edited 3/13/2013 
+    by Ethan Madden (Jetpacktuxedo)
+===========================================
+
+This is sl. It makes a steam locomotive appear when you type ls wrong.
+This is the source (from 1993) pulled from the developer's website.
+I modified it a little bit to make it more vulgar and slow it down slightly.
+Modification inspired by /u/hisham_hm on reddit.
+
+From what I can tell from editing it, sl.h is templates for the trains
+and sl.c uses ncurses to make them run.
+
+You should be able to just run "make" and then copy the binary to /usr/local/bin 
+or something. If you have trouble running make then make sure you have ncurses
+installed. On a RHEL machine use
+  # sudo yum install ncurses-devel ncurses
+On a debian or ubuntu box
+  $ sudo apt-get install libncurses5-dev libncursesw5-dev
+Arch users, you guys are on your own, but it shouldn't be hard.
+
+CHOO CHOO MOTHERFUCKER!
