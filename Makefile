@@ -12,3 +12,5 @@ sl: sl.c sl.h
 	$(CC) $(CFLAGS) -o sl sl.c -lcurses -ltermcap
 #	$(CC) $(CFLAGS) -o sl sl.c -lcurses
 
+clean: sl
+	rm sl
